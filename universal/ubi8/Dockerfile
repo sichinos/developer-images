@@ -157,7 +157,7 @@ RUN curl -L https://github.com/apache/camel-k/releases/download/v${KAMEL_VERSION
 
 # oc
 ENV OC_VERSION=latest
-RUN curl -L https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${OC_VERSION}/linux/openshift-client-linux.tar.gz | tar -C /usr/local/bin -xz \
+RUN curl -L https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${OC_VERSION}/openshift-client-linux.tar.gz | tar -C /usr/local/bin -xz \
     && chmod +x /usr/local/bin/oc
 
 ## podman buildah skopeo
